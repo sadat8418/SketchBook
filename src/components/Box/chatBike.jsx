@@ -79,8 +79,8 @@ export default function ThreeModelScene() {
 
       // Rotate model toward mouse
       if (model) {
-        model.rotation.y += (mouse.x * Math.PI - model.rotation.y) * 0.02;
-        model.rotation.x += (mouse.y * Math.PI - model.rotation.x) * 0.02;
+        model.rotation.y += (mouse.x * Math.PI - model.rotation.y) * 0.01;
+        model.rotation.x += (mouse.y * Math.PI - model.rotation.x) * 0.01;
       }
 
       renderer.render(scene, camera);
