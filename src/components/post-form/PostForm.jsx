@@ -5,7 +5,6 @@ import appwriteService from "../../appwrite/config";
 import { useNavigate } from "react-router-dom";
 import { useSelector } from "react-redux";
 import { Button } from "@/components/ui/button"
-import ThreeScene from '../Box/chatCube' 
 //continuosly watch 
 
 export default function PostForm({ post }) {
@@ -130,7 +129,7 @@ export default function PostForm({ post }) {
 
                   
             </div>
-             <ThreeScene />
+            
         </form>
     );
 }

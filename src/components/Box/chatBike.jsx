@@ -16,7 +16,7 @@ export default function ThreeModelScene() {
     // Scene setup
     const scene = new THREE.Scene();
     const camera = new THREE.PerspectiveCamera(
-      95,
+      75,
       mountRef.current.clientWidth / mountRef.current.clientHeight,
       0.1,
       100
@@ -79,8 +79,8 @@ export default function ThreeModelScene() {
 
       // Rotate model toward mouse
       if (model) {
-        model.rotation.y += (mouse.x * Math.PI - model.rotation.y) * 0.05;
-        model.rotation.x += (mouse.y * Math.PI - model.rotation.x) * 0.05;
+        model.rotation.y += (mouse.x * Math.PI - model.rotation.y) * 0.02;
+        model.rotation.x += (mouse.y * Math.PI - model.rotation.x) * 0.02;
       }
 
       renderer.render(scene, camera);

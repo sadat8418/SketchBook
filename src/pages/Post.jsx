@@ -5,6 +5,7 @@ import { Button2, Container } from "../components";
 import parse from "html-react-parser";
 import { useSelector } from "react-redux";
 import { Button } from "@/components/ui/button"
+import ThreeScene from '../components/Box/chatCube' 
 
 export default function Post() {
     const [post, setPost] = useState(null);
@@ -66,6 +67,7 @@ export default function Post() {
                     {parse(post.content)}
                     </div>
             </Container>
+             <ThreeScene />
         </div>
     ) : null;
 }
