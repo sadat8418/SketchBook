@@ -1,4 +1,4 @@
-# This app is created with REAcT, appwrite, threejs, reduxtoolkit, shadCN useRef and lots of love 
+# This app is created with REAcT, appwrite, threejs, tinyMCE, reduxtoolkit, reacthookform, shadCN, useRef and lots of love 
 
 //backend theke data astese kina 
 if(req.query.search) {
