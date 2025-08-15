@@ -40,3 +40,9 @@ export default defineConfig({
 })
 # npx shadcn@latest init 
 # npx shadcn@latest add button
+
+# 12 
+npm i @reduxjs/toolkit react-router-dom appwrite @tinymce/tinymce-react html-react-parser react-hook-form
+
+three
+npm i three @react-three/fiber three react-scripts react-dom react @types/three @react-three/drei
