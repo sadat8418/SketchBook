@@ -21,9 +21,7 @@ function Home() {
             
             <div className="w-full py-0 mt-0 text-center">
                <Hero />
-                    <Container>
- 
-                </Container>
+                    
                 {/* <Container>
                     
                     <div className="w-full py-0 mt-0 text-center">
@@ -39,18 +37,16 @@ function Home() {
         )
     }
     return (
-        <div className='w-full py-8'>
+        <div className='w-full py-auto px-auto'>
             <Container>
                 <div className='flex flex-wrap'>
                     
                     {posts.map((post) => (
                         <div key={post.$id} className='p-2 w-1/4'>
-                            {/* post = {post} eivabeo chole */}
                             <PostCard {...post} />
                         </div>
                         
                     ))}
-
                        <ThreeScene />
                 </div>
             </Container>
