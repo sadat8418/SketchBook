@@ -46,3 +46,5 @@ npm i @reduxjs/toolkit react-router-dom appwrite @tinymce/tinymce-react html-rea
 
 three
 npm i three @react-three/fiber three react-scripts react-dom react @types/three @react-three/drei
+
+ vercel.json 
