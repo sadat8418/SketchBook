@@ -35,7 +35,7 @@ export default function Post() {
     };
 
     return post ? (
-        <div className="py-auto">
+        <div >
             <Container>
                 {/* <div className="w-full flex justify-left mb-auto "> */}
                     {/* <img
@@ -47,10 +47,10 @@ export default function Post() {
 
 
                     {isAuthor && (
-                        <div className="browser-css p-2">
+                        <div>
                             
                             <Link to={`/edit-post/${post.$id}`}>
-                                <Button2  className="mr-3 bg-blue-500 hover:bg-stone-800">
+                                <Button2  className=" mr-3 bg-blue-500 hover:bg-stone-800">
                                     Edit
                                 </Button2>
                             </Link>
@@ -60,18 +60,17 @@ export default function Post() {
                         </div>
                     )}
                 {/* </div> */}
-                <div className="w-full mb-6">
+                <div className="w-full ">
                     <h1 className="text-2xl font-bold">{post.title}</h1>
                 </div>
-                 <div className='flex flex-wrap'>
+                 
                 <div className="browser-css">
                   
                     {parse(post.content)}
                     </div>
                      <ThreeScene />
-                     </div>
+                     
             </Container>
-            
         </div>
     ) : null;
 }
