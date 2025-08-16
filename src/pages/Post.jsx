@@ -68,7 +68,7 @@ export default function Post() {
                   
                     {parse(post.content)}
                     </div>
-                     <ThreeScene />
+                     {/* <ThreeScene /> */}
                      </div>
             </Container>
             
