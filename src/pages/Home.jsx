@@ -37,7 +37,7 @@ function Home() {
         )
     }
     return (
-        <div className='w-full py-auto px-auto'>
+        <div className='w-full py-8 px-auto'>
             <Container>
                 <div className='flex flex-wrap'>
                     

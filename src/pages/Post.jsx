@@ -46,8 +46,8 @@ export default function Post() {
 
 
 
-                    {isAuthor && (
-                        <div>
+                    {isAuthor && (   //author na hoile cannot edit or delete
+                        <div className="flex justify-left mt-4 mb-4">
                             
                             <Link to={`/edit-post/${post.$id}`}>
                                 <Button2  className=" mr-3 bg-blue-500 hover:bg-stone-800">
@@ -60,11 +60,11 @@ export default function Post() {
                         </div>
                     )}
                 {/* </div> */}
-                <div className="w-full ">
+                <div className="w-full mt-8">
                     <h1 className="text-2xl font-bold">{post.title}</h1>
                 </div>
                  
-                <div className="browser-css">
+                <div className="browser-css w-full mt-4">
                   
                     {parse(post.content)}
                     </div>
