@@ -35,9 +35,9 @@ export default function Post() {
     };
 
     return post ? (
-        <div className="py-8">
+        <div className="py-auto">
             <Container>
-                <div className="w-full flex justify-left mb-auto relative ">
+                {/* <div className="w-full flex justify-left mb-auto "> */}
                     {/* <img
                         // src={appwriteService.getFilePreview(post.featuredImage)}
                         alt={post.title}
@@ -47,8 +47,8 @@ export default function Post() {
 
 
                     {isAuthor && (
-                        <div className="flex right-auto top-auto">
-                            <br />
+                        <div className="browser-css p-2">
+                            
                             <Link to={`/edit-post/${post.$id}`}>
                                 <Button2  className="mr-3 bg-blue-500 hover:bg-stone-800">
                                     Edit
@@ -59,7 +59,7 @@ export default function Post() {
                             </Button2>
                         </div>
                     )}
-                </div>
+                {/* </div> */}
                 <div className="w-full mb-6">
                     <h1 className="text-2xl font-bold">{post.title}</h1>
                 </div>
@@ -68,7 +68,7 @@ export default function Post() {
                   
                     {parse(post.content)}
                     </div>
-                     {/* <ThreeScene /> */}
+                     <ThreeScene />
                      </div>
             </Container>
             
